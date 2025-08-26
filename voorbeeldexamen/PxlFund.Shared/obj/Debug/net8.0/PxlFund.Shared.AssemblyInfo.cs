@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PxlFund.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+597e7c000c8164e0efbb311089b5070baa6a02e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("PxlFund.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PxlFund.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
