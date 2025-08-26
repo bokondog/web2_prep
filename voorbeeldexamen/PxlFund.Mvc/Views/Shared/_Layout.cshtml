@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PxlFund.Mvc</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PxlFund.Mvc.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="row bg-dark text-center">
+            <div class="col-2 text-right text-white">
+                Pxl Fund
+            </div>
+            <div class="col-1 text-right">
+            </div>
+            <div class="col-5 text-center">
+                <a class="text-white" asp-area="" asp-controller="Bank" asp-action="Index">Bank Info</a>
+                &nbsp;
+                <a class="text-white" asp-area="" asp-controller="Fund" asp-action="Index">Fund Info</a>
+            </div>
+            <div class="col-4 text-right">
+                @if (User.Identity!.IsAuthenticated)
+                {
+                    <a class="text-white" asp-area="" asp-controller="UserFunds" asp-action="Index">Mijn fondsen</a>
+                    <a class="text-white" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                }
+                else
+                {
+                    <a class="text-white" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                    <a class="text-white" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                }
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - PxlFund.Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
