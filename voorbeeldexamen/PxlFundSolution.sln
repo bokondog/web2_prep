@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PxlFund.Mvc", "PxlFund.Mvc\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PxlFund.Shared", "PxlFund.Shared\PxlFund.Shared.csproj", "{65F1B674-690F-4A70-948A-D00E2CBA36E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duende.IdentityServer.Demo", "DuendeIdentityServer\Duende.IdentityServer.Demo.csproj", "{6E3F486B-D5E6-4747-AF85-CDC170F5CAB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{65F1B674-690F-4A70-948A-D00E2CBA36E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65F1B674-690F-4A70-948A-D00E2CBA36E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65F1B674-690F-4A70-948A-D00E2CBA36E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3F486B-D5E6-4747-AF85-CDC170F5CAB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3F486B-D5E6-4747-AF85-CDC170F5CAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3F486B-D5E6-4747-AF85-CDC170F5CAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3F486B-D5E6-4747-AF85-CDC170F5CAB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

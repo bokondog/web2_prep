@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Full",
+    "Projects": [
+      {
+        "Path": "DuendeIdentityServer\\Duende.IdentityServer.Demo.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PxlFund.Mvc\\PxlFund.Mvc.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]
