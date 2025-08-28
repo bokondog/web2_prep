@@ -12,9 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 #region services
-
+//DB: connection string
 var templateDbConnection = builder.Configuration.GetConnectionString("TemplateDbContext");
-
+//DB: context
 builder.Services.AddDbContext<TemplateDbContext>(options => options.UseSqlServer(templateDbConnection));
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
@@ -35,7 +35,7 @@ builder.Services.AddAuthentication()
 .AddCookie("Cookies")
 .AddOpenIdConnect("oidc", options =>
 {
-    options.Authority = "https://localhost:5999";
+    options.Authority = "https://localhost:5001";
     options.ClientId = "mvc";
     options.ClientSecret = "secret";
     options.ResponseType = "code";
@@ -70,6 +70,8 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapBlazorHub();
+
+//DB: seeding
 await SeedData.EnsurePopulatedAsync(app);
 
 app.Run();

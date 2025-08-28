@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Mvc", "Template.Mvc.csproj", "{53951C59-A9EC-42AB-96D0-7186785FECFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duende.IdentityServer.Demo", "..\DuendeIdentityServer\Duende.IdentityServer.Demo.csproj", "{B49FEC6C-FDAA-4A21-A682-6495804308A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{53951C59-A9EC-42AB-96D0-7186785FECFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53951C59-A9EC-42AB-96D0-7186785FECFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53951C59-A9EC-42AB-96D0-7186785FECFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49FEC6C-FDAA-4A21-A682-6495804308A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49FEC6C-FDAA-4A21-A682-6495804308A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49FEC6C-FDAA-4A21-A682-6495804308A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49FEC6C-FDAA-4A21-A682-6495804308A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

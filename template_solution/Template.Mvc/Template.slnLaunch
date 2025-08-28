@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Full",
+    "Projects": [
+      {
+        "Path": "..\\DuendeIdentityServer\\Duende.IdentityServer.Demo.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Template.Mvc.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
